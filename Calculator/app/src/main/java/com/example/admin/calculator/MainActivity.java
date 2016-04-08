@@ -111,6 +111,7 @@ public class MainActivity extends AppCompatActivity {
         value.setText("0");
         status = 1;
         count =0;
+        dpt=0;
     }
 
     public void btn_Hieu(View v){
@@ -131,6 +132,7 @@ public class MainActivity extends AppCompatActivity {
         value.setText("0");
         status = 2;
         count=0;
+        dpt=0;
     }
     public void btn_Tich(View v){
         result = (TextView) findViewById(R.id.result);
@@ -203,9 +205,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
     public void btn_Dot(View v){
-        result = (TextView) findViewById(R.id.result);
+        value = (TextView) findViewById(R.id.value);
         if(dpt==0) {
-            result.setText(result.getText() + ".");
+            value.setText(value.getText() + ".");
             dpt++;
         }
     }
